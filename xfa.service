@@ -1,0 +1,14 @@
+ [Unit]
+ Description=Automated Xenium Flasher
+ After=multi-user.target
+
+ [Service]
+ User=user
+ Type=idle
+ ExecStart=/usr/bin/python /home/user/xfa/xfa.py
+
+ StandardOutput=file:/tmp/xfa.log
+ StandardError=file:/tmp/xfa.log
+
+ [Install]
+ WantedBy=multi-user.target
