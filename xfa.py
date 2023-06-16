@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-
-
-# Python wrapper for Xenium programming using Pi-ZeroW PC-Board
-# Copyright (C) 2019 Koos du Preez (kdupreez@hotmail.com)
 ##
-# Automation script cobbled together by Andr0, Rev.5
+# Automation script cobbled together by Andr0, Rev.6
+# Inspiration from KoosCode. 
 ##
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
