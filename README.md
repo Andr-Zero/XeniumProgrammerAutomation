@@ -7,12 +7,12 @@ Make sure the programmer directory and binary file locations in xfa.py are corre
 Make sure that xfa.service also refelects the correct user path.
 
 Run the following commands in same directory you downloaded xfa in:
-
+```
 sudo cp xfa.service /lib/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable xfa.service
 sudo systemctl start xfa.service
-
+```
 All three LEDs should be lit up. Signifying everything startup correctly and is waiting on user input!
 The system should automaticly start this way for now on. No need to SSH into the pi anymore! (Unless you want to debug something).
 
@@ -22,13 +22,19 @@ The system should automaticly start this way for now on. No need to SSH into the
 * B4 initiates a safe shutdown of the pi. Once the pi's activity LED is off, it's safe to remove power.
 
 
+
 Green LED means programming successful
-Yellow LED means that it's in process of programming
-  * Fast blink means Programming via JTAG
-  * Slow blink means Programming via LPC
-Red LED means programming failed...
-	* Fast blink means JTAG Error.
-	* Slow blink means LPC\TSOP Error.
+
+Yellow LED means that it's in process of programming.
+
+	Fast blink means Programming via JTAG.
+	Slow blink means Programming via LPC.
+
+Red LED means programming failed.
+
+	Fast blink means JTAG Error.
+	Slow blink means LPC\TSOP Error.
+	
 
 Logs can be found at /tmp/xfa.log(If you want to follow the log in realtime, run: tail -f /tmp/xfa.log)
 
