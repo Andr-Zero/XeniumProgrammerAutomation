@@ -2,9 +2,9 @@ Instructions (These are not finalized, let me know what should be changed).
 
 Create a xfa directory in home, copy xfa.service and xfa.py into that direcotry. 
 
-NOTE: The file xfa.py and xfa.service has user definable variables!
-Make sure the programmer directory and binary file locations in xfa.py are correct.
-Make sure that xfa.service also refelects the correct user path.
+NOTE: The file xfa.py and xfa.service has user definable values! You'll most likly have to updates these!
+Make sure the working directory is xfa.py is correct. You might also need to update the file paths and/or names if you're not using the same ones I am.
+Make sure under [Service} the user and path in xfa.service is correct. Otherwise the service will not automaticlly start when the pi is started.
 
 Run the following commands in same directory you downloaded xfa in:
 ```
@@ -13,7 +13,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable xfa.service
 sudo systemctl start xfa.service
 ```
-All three LEDs should be lit up. Signifying everything startup correctly and is waiting on user input!
+All three LEDs should be lit up in a sequence. Signifying the scipt is running correctly and is waiting on user input!
 The system should automaticly start this way for now on. No need to SSH into the pi anymore! (Unless you want to debug something).
 
 * Press B1 to program an OpenXenium Chip from start to finish.
