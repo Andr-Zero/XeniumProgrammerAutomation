@@ -2,9 +2,12 @@ Instructions (These are not finalized, let me know what should be changed).
 
 Create a xfa directory in home, copy xfa.service and xfa.py into that direcotry. 
 
-NOTE: The file xfa.py and xfa.service has user definable values! You'll most likly have to updates these!
-Make sure the working directory is xfa.py is correct. You might also need to update the file paths and/or names if you're not using the same ones I am.
-Make sure under [Service} the user and path in xfa.service is correct. Otherwise the service will not automaticlly start when the pi is started.
+NOTE: The file xfa.py and xfa.service has user definable values! You'll most likely have to updates these!
+
+Make sure the working directory in xfa.py is correct. You might also need to update the file paths and/or names if you're not using the same ones as myself.
+
+Make sure the user and path in xfa.service under [Service] is correct. Otherwise the service will not start automaticlly when the pi is started.
+
 
 Run the following commands in same directory you downloaded xfa in:
 ```
